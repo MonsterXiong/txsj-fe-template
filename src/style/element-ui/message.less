@@ -1,0 +1,28 @@
+.el-message-box {
+  border: unset;
+  &__header {
+    padding: 10px 20px 10px;
+    background-color: @linear-bg-color-light;
+  }
+
+  &__title {
+    color: @font-color-light;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__headerbtn {
+    top: 10px;
+
+    > .el-message-box__close {
+      color: @font-color-light;
+    }
+  }
+
+  &__message {
+    > p {
+      max-height: 300px;
+      overflow-y: auto;
+    }
+  }
+}

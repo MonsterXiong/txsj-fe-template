@@ -1,0 +1,242 @@
+#app {
+  background-color: @background-color-base;
+}
+.base-border {
+  border-color: @border-color-base;
+}
+.table-header {
+  color: @table-header-color;
+  background-color: @table-header-bg-color;
+}
+.table-option-bar {
+  // padding: 10px 0px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.common-table-page {
+  padding: @base-space*5;
+  > div {
+    .full-container();
+  }
+}
+
+.form-footer {
+  text-align: @dialog-footer-align;
+  padding: unset;
+  margin-top: 10px;
+}
+
+.context-submenu {
+  > ul {
+    min-width: auto !important;
+    padding: 4px 2px 4px 2px;
+    position: absolute;
+    left: -8px;
+    top: 10px;
+  }
+}
+
+// ============富文本框==================
+.w-e-toolbar {
+  z-index: 101 !important;
+}
+.w-e-text-container {
+  z-index: 100 !important;
+}
+
+.tableArea {
+  .el-select {
+    .el-input {
+      width: 100% !important;
+    }
+  }
+}
+
+.right-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.splitpanes__splitter {
+  margin-left: unset;
+  background-color: @background-color-layout;
+  border-left: 1px solid @border-color-base;
+  border-right: 1px solid @border-color-base;
+}
+
+// .splitpanes.default-theme .splitpanes__pane {
+//   background-color: @background-color-layout;
+// }
+
+.level-check-orange {
+  input {
+    color: orange !important;
+  }
+}
+
+//本项目相关通用class之类的样式覆盖
+
+.inline-icon {
+  margin-right: 6px;
+  font-size: 16px;
+}
+
+.inline-text-ellipsis {
+  .text-ellipsis();
+  width: calc(100% - 22px);
+}
+
+.base-toolbar-wrap {
+  width: 100%;
+  height: @base-tool-bar-height;
+  font-size: 14px;
+  display: flex;
+  border-bottom: 1px solid @border-color-base;
+  color: @font-color-toolbar;
+  .toolbar-base-wrapper {
+    padding: 10px 0;
+    height: 100%;
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+    .toolbar-right-divider {
+      height: 100%;
+      // padding-right: 10px;
+      margin-right: 5px;
+      border-right: 1px solid @border-color-base;
+    }
+    .toolbar-title {
+      position: absolute;
+      width: 100%;
+      bottom: 2px;
+      text-align: center;
+      font-size: 12px;
+      min-width: max-content;
+      color: @font-color-toolbar-disabled;
+    }
+    .toolbar-menu {
+      display: flex;
+      margin-bottom: 10px;
+    }
+    .toolbar-menu-item {
+      height: 100%;
+    }
+    .toolbar-menu-item-box {
+      height: 100%;
+      .flex-column();
+      justify-content: space-between;
+      overflow-y: auto;
+      margin-right: 5px;
+    }
+    .toolbar-disable-menu {
+      cursor: not-allowed;
+    }
+  }
+  > .extent-tool-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 45px 5px 2px;
+  }
+  .theme-box {
+    background: @background-color-toolbar-disabled;
+  }
+  .drop-down-panel,
+  .theme-pop-wrapper {
+    border: 1px solid @border-color-base;
+    box-shadow: 0px 0px 5px @shadow-color-base; //0px
+    background: @font-color;
+  }
+  .color-bar {
+    box-shadow: 0px 0px 4px 0 @shadow-color-base;
+  }
+
+  .toolbar-menu-active-c-bg,
+  .toolbar-menu-c-bg:hover {
+    // background: @base-theme-color;
+    // color: @font-color;
+    // color: @font-color-active;
+    background: @background-color-toolbar-hover;
+  }
+  .toolbar-menu-active-c-fontcolor,
+  .toolbar-menu-c-fontcolor:hover {
+    color: @base-theme-color;
+  }
+  .toolbar-menu-active-c-border,
+  .toolbar-menu-c-border:hover {
+    border-color: @base-theme-color;
+  }
+  .toolbar-menu-disable-c-bg {
+    background: @background-color-toolbar-disabled!important;
+    color: @font-color-toolbar-disabled!important;
+  }
+}
+.map-toolbar {
+  .toolbar-menu-active-c-bg,
+  .toolbar-menu-c-bg:hover {
+    // background: @base-theme-color;
+    // color: @font-color;
+    color: @font-color-active;
+    background: @background-color-base;
+  }
+}
+.side-bar {
+  width: 46px;
+}
+
+.side-bar ~ .main-container-wrapper {
+  width: calc(100% - 46px);
+}
+
+.inline-form-toolbar {
+  .el-form-item {
+    margin-bottom: @base-space*3;
+  }
+}
+
+.inline-between-toolbar {
+  display: flex;
+  justify-content: space-between;
+
+  .el-form {
+    &-item {
+      margin-bottom: @base-space*3;
+    }
+  }
+}
+
+// 新手指导
+
+.introjs-skipbutton {
+  color: @font-color-active !important; //0095ff
+}
+
+.map-container {
+  height: 100%;
+  // position: absolute;
+}
+
+.map-panel-layout {
+  pointer-events: none;
+
+  .left-side,
+  .right-side .splitpanes__splitter {
+    pointer-events: all;
+  }
+
+  .side-header {
+    // font-size: 15px;
+    text-align: center;
+    line-height: 30px;
+    color: @map-panel-title-font-color;
+    background: @map-panel-title-background-color;
+  }
+  .collapse-icon,
+  .unfold-icon,
+  .side-nav {
+    color: @map-panel-font-color;
+    background: @map-panel-background-color;
+  }
+}

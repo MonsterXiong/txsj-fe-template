@@ -1,0 +1,30 @@
+.el-dialog {
+  &__header {
+    background-image: linear-gradient(to right, @linear-bg-color-light, @linear-bg-color-dark);
+    padding: 10px;
+
+    .el-dialog__title {
+      color: @font-color;
+      font-size: 16px;
+    }
+
+    .el-dialog__headerbtn {
+      top: 15px;
+      .el-dialog__close {
+        color: @font-color;
+      }
+    }
+  }
+
+  &__body {
+    padding: 20px 30px;
+
+    .el-pagination {
+      padding-top: 10px;
+    }
+  }
+
+  &__footer {
+    padding: 0px 30px 20px;
+  }
+}

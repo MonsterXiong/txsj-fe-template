@@ -1,0 +1,67 @@
+//外部组件样式覆盖   比如split
+
+.default-theme.splitpanes {
+  .splitpanes__pane {
+    background-color: transparent !important;
+  }
+
+  .splitpanes__splitter {
+    background: transparent !important;
+    border-color: transparent !important;
+
+    &:hover {
+      border-left: unset !important;
+    }
+  }
+}
+.default-theme.splitpanes.splitpanes--vertical {
+  > .splitpanes__splitter {
+    width: 10px;
+  }
+}
+.default-theme.splitpanes.splitpanes--horizontal {
+  > .splitpanes__splitter {
+    &:hover {
+      border-top: none;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: 10;
+      top: 0px;
+      width: 100%;
+      height: 8px;
+      background: transparent;
+      pointer-events: initial;
+    }
+  }
+}
+.gantt_container {
+  .gantt_grid_scale,
+  .gantt_task_scale {
+    background-color: @table-header-bg-color;
+    border-color: @table-border-color;
+  }
+
+  .gantt_task .gantt_task_scale .gantt_scale_cell {
+    color: @table-header-color;
+    font-weight: 600;
+    border-color: @table-border-color;
+  }
+
+  .gantt_grid_scale .gantt_grid_head_cell {
+    color: @table-header-color;
+    font-weight: 600;
+  }
+
+  .gantt_grid_column_resize_wrap .gantt_grid_column_resize {
+    background-color: @table-border-color;
+  }
+
+  .gantt_layout_cell_border_right,
+  .gantt_scale_line {
+    border-color: @table-border-color;
+  }
+
+  border-color: @table-border-color !important;
+}

@@ -1,0 +1,165 @@
+// button 颜色设置
+.el-button--primary {
+  background-color: @button-bg-color-primary;
+  border-color: @button-bg-color-primary;
+  color: @button-font-color-primary;
+}
+.el-button--primary:focus, .el-button--primary:hover {
+  background-color: @button-active-bg-color-primary;
+  border-color: @button-active-bg-color-primary;
+  color: @button-active-font-color-primary;
+}
+.el-button--primary.is-disabled, .el-button--primary.is-disabled:active, .el-button--primary.is-disabled:focus, .el-button--primary.is-disabled:hover {
+  color: @button-font-color-primary;
+  background-color: @button-bg-color-primary-disabled;
+  border-color: @button-bg-color-primary-disabled;
+}
+
+.el-button--primary.is-plain{
+  background-color: @plain-button-bg-color-primary;
+  border-color: @plain-button-border-color-primary;
+  color: @button-bg-color-primary;
+}
+.el-button--primary.is-plain:focus, .el-button--primary.is-plain:hover {
+  background-color: @button-bg-color-primary;
+  border-color: @button-bg-color-primary;
+  color: @plain-button-active-font-color-primary;
+}
+.el-button--primary.is-plain.is-disabled, .el-button--primary.is-plain.is-disabled:active, .el-button--primary.is-plain.is-disabled:focus, .el-button--primary.is-plain.is-disabled:hover {
+  color: @plain-button-font-color-primary-disabled;
+  background-color: @plain-button-bg-color-primary;
+  border-color: @plain-button-border-color-primary-disabled;
+}
+
+
+.el-button--default ,.el-button--default.is-plain{
+  background-color: @button-bg-color-default;
+  border-color: @button-border-color-default;
+  color: @button-font-color-default;
+}
+.el-button--default:focus, .el-button--default:hover,.el-button--default.is-plain:focus, .el-button--default.is-plain:hover {
+  background-color: @button-active-bg-color-default;
+  border-color: @button-active-border-color-default;
+  color: @button-active-font-color-default;
+}
+.el-button--default.is-disabled, .el-button--default.is-disabled:focus, .el-button--default.is-disabled:hover,.el-button--default.is-plain.is-disabled, .el-button--default.is-plain.is-disabled:focus, .el-button--default.is-plain.is-disabled:hover{
+  background-color: @button-bg-color-default;
+  border-color: @button-border-color-disabled;
+  color: @button-font-color-disabled;
+}
+
+
+.el-button--danger {
+  background-color: @button-bg-color-danger;
+  border-color: @button-bg-color-danger;
+  color: @button-font-color-danger;
+}
+.el-button--danger:focus, .el-button--danger:hover {
+  background-color: @button-active-bg-color-danger;
+  border-color: @button-active-bg-color-danger;
+  color: @button-active-font-color-danger;
+}
+.el-button--danger.is-disabled, .el-button--danger.is-disabled:active, .el-button--danger.is-disabled:focus, .el-button--danger.is-disabled:hover {
+  color: @button-font-color-danger;
+  background-color: @button-bg-color-danger-disabled;
+  border-color: @button-bg-color-danger-disabled;
+}
+
+.el-button--danger.is-plain{
+  background-color: @plain-button-bg-color-danger;
+  border-color: @plain-button-border-color-danger;
+  color: @button-bg-color-danger;
+}
+.el-button--danger.is-plain:focus, .el-button--danger.is-plain:hover {
+  background-color: @button-bg-color-danger;
+  border-color: @button-bg-color-danger;
+  color: @plain-button-active-font-color-danger;
+}
+
+.el-button--danger.is-plain.is-disabled, .el-button--danger.is-plain.is-disabled:active, .el-button--danger.is-plain.is-disabled:focus, .el-button--danger.is-plain.is-disabled:hover {
+  color: @plain-button-font-color-danger-disabled;
+  background-color: @plain-button-bg-color-danger;
+  border-color: @plain-button-border-color-danger-disabled;
+}
+
+.el-button--success {
+  background-color: @button-bg-color-success;
+  border-color: @button-bg-color-success;
+  color: @button-font-color-success;
+}
+.el-button--success:focus, .el-button--success:hover {
+  background-color: @button-active-bg-color-success;
+  border-color: @button-active-bg-color-success;
+  color: @button-active-font-color-success;
+}
+
+.el-button--danger.is-disabled, .el-button--danger.is-disabled:active, .el-button--danger.is-disabled:focus, .el-button--danger.is-disabled:hover {
+  color: @button-font-color-danger;
+  background-color: @button-bg-color-danger-disabled;
+  border-color: @button-bg-color-danger-disabled;
+}
+
+.el-button--success.is-plain{
+  background-color: @plain-button-bg-color-success;
+  border-color: @plain-button-border-color-success;
+  color: @button-bg-color-success;
+}
+.el-button--success.is-plain:focus, .el-button--success.is-plain:hover {
+  background-color: @button-bg-color-success;
+  border-color: @button-bg-color-success;
+  color: @plain-button-active-font-color-success;
+}
+.el-button--success.is-plain.is-disabled, .el-button--success.is-plain.is-disabled:active, .el-button--success.is-plain.is-disabled:focus, .el-button--success.is-plain.is-disabled:hover {
+  color: @plain-button-font-color-success-disabled;
+  background-color: @plain-button-bg-color-success;
+  border-color: @plain-button-border-color-success-disabled;
+}
+
+
+.el-button--warning {
+  background-color: @button-bg-color-warning;
+  border-color: @button-bg-color-warning;
+  color: @button-font-color-warning;
+}
+.el-button--warning:focus, .el-button--warning:hover {
+  background-color: @button-active-bg-color-warning;
+  border-color: @button-active-bg-color-warning;
+  color: @button-active-font-color-warning;
+}
+
+.el-button--warning.is-disabled, .el-button--warning.is-disabled:active, .el-button--warning.is-disabled:focus, .el-button--warning.is-disabled:hover {
+  color: @button-font-color-warning;
+  background-color: @button-bg-color-warning-disabled;
+  border-color: @button-bg-color-warning-disabled;
+}
+
+.el-button--warning.is-plain{
+  background-color: @plain-button-bg-color-warning;
+  border-color: @plain-button-border-color-warning;
+  color: @button-bg-color-warning;
+}
+.el-button--warning.is-plain:focus, .el-button--warning.is-plain:hover {
+  background-color: @button-bg-color-warning;
+  border-color: @button-bg-color-warning;
+  color: @plain-button-active-font-color-warning;
+}
+.el-button--warning.is-plain.is-disabled, .el-button--warning.is-plain.is-disabled:active, .el-button--warning.is-plain.is-disabled:focus, .el-button--warning.is-plain.is-disabled:hover {
+  color: @plain-button-font-color-warning-disabled;
+  background-color: @plain-button-bg-color-warning;
+  border-color: @plain-button-border-color-warning-disabled;
+}
+
+
+.button-text-danger{
+  // color: @defaultDangerColor;
+}
+.button-text-danger:focus, .button-text-danger:hover{
+  // color: @defaultDangerColor;
+}
+
+.button-text-warning{
+  // color: @defaultWarningColor;
+}
+.button-text-warning:focus, .button-text-warning:hover{
+  // color: @tagViewsActiveColor;
+}

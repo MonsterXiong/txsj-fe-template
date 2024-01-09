@@ -1,0 +1,118 @@
+.el-input {
+  &__inner {
+    // border-radius: 0px;
+    background-color: transparent;
+  }
+}
+.el-input__inner {
+  border-color: @input-border-color;
+  background-color: @input-bg-color;
+  color: @input-font-color;
+}
+.el-input .el-input__inner::placeholder{
+  color: @input-tipfont-color;
+}
+.el-input__inner:hover {
+  border-color: @input-hover-border-color;
+}
+
+// 输入框选中样式
+.el-input.is-active .el-input__inner, .el-input__inner:focus {
+  border-color: @input-select-border-color;
+}
+
+// 下拉框选中样式
+.el-range-editor.is-active, .el-range-editor.is-active:hover, .el-select .el-input.is-focus .el-input__inner {
+  border-color: @input-select-border-color;
+}
+.el-select:hover .el-input__inner {
+  border-color: @input-hover-border-color;
+}
+.el-select .el-input {
+  .el-input__icon, .el-select__caret {
+    color: @input-icon-color;
+  }
+}
+.el-select-dropdown {
+  border-color: @input-select-border-color;
+}
+
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover,.el-select-dropdown.is-multiple .el-select-dropdown__item.selected.hover {
+  background-color: @table-hover-bg-color;
+  color: @font-color-active;
+}
+
+.el-select-dropdown__item.selected,.el-select-dropdown.is-multiple .el-select-dropdown__item.selected  {
+  color: @font-color-active;
+}
+
+.el-popper[x-placement^=bottom] .popper__arrow {
+  border-bottom-color:  @input-select-border-color;
+}
+
+// 禁用样式
+.el-input.is-disabled .el-input__inner {
+  background-color: @input-disable-bg-color;
+  border-color: @input-disable-border-color;
+  color: @input-font-disable-color;
+}
+.el-input.is-disabled .el-input__inner::placeholder{
+  color: @input-tipfont-disable-color;
+}
+
+.el-input-group {
+  overflow: hidden;
+}
+
+// textarea
+.el-textarea__inner{
+  border-color: @input-border-color;
+  background-color: @input-bg-color;
+  color: @input-font-color;
+}
+.el-textarea__inner:hover {
+  border-color: @input-hover-border-color;
+}
+.el-textarea__inner:focus {
+  border-color: @input-select-border-color;
+}
+.el-textarea.is-disabled .el-textarea__inner{
+  background-color: @input-disable-bg-color;
+  border-color: @input-disable-border-color;
+  color: @input-font-disable-color;
+}
+
+//树形下拉框 普通样式
+.vue-treeselect:not(.vue-treeselect--disabled):not(.vue-treeselect--focused) .vue-treeselect__control {
+  border-color: @input-border-color;
+  background-color: @input-bg-color;
+  color: @input-font-color;
+}
+.vue-treeselect:not(.vue-treeselect--disabled):not(.vue-treeselect--focused) .vue-treeselect__control:hover {
+  // 树形下拉框 hover
+  border-color: @input-hover-border-color;
+}
+.vue-treeselect:not(.vue-treeselect--disabled):not(.vue-treeselect--focused) .vue-treeselect__control:focus {
+  border-color: @input-select-border-color;
+}
+// 树形下拉框 选中
+.vue-treeselect--open .vue-treeselect__control{
+  border-color: @input-select-border-color;
+}
+.vue-treeselect__menu {
+  border-color: @input-select-border-color;
+}
+// 树形下拉框禁用样式
+.vue-treeselect--disabled .vue-treeselect__control {
+  background-color: @input-disable-bg-color;
+  border-color: @input-disable-border-color;
+  color: @input-font-disable-color;
+  cursor: not-allowed;
+}
+// 数字输入框
+.el-input-number__decrease:hover, .el-input-number__increase:hover {
+  color: @font-color-active;
+}
+.el-input-number__decrease:hover:not(.is-disabled)~.el-input .el-input__inner:not(.is-disabled), .el-input-number__increase:hover:not(.is-disabled)~.el-input .el-input__inner:not(.is-disabled) {
+  border-color: @input-hover-border-color;
+}

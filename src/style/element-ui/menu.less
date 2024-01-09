@@ -1,0 +1,33 @@
+//覆盖element原有样式  菜单相关样式
+body {
+  .el-menu.el-menu--horizontal {
+    border-bottom: none;
+  }
+}
+
+// header 下拉菜单过长滚动条显示
+.el-menu--popup-bottom-start {
+  // max-height: 222px;
+  max-height: 266px;
+  overflow: auto;
+}
+
+.el-menu--horizontal {
+  .el-menu--popup {
+    padding: 0;
+    // border: 1px solid @menus-border-color;196cd7
+  }
+
+  ul {
+    background: @background-color-layout !important;
+
+    .el-menu-item {
+      background: @background-color-layout !important;
+      color: @font-color-light;
+    }
+
+    .el-menu-item:hover {
+      background-color: @base-theme-color !important;
+    }
+  }
+}

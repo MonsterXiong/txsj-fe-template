@@ -1,0 +1,50 @@
+.context-submenu,
+.context-menu-box {
+  background-color: @base-theme-color;
+    .el-menu {
+      background-color: @background-color-layout;
+      border: 1px solid @base-theme-color;
+    }
+    .el-submenu__title,
+    .el-menu-item {
+      color: @font-color-light;
+      &:focus,
+      &:hover {
+        background-color: @base-theme-color !important;
+      }
+    }
+    .el-submenu__title i {
+      color: @font-color-light;
+    }
+}
+.context-menu-box {
+  clip-path: polygon(0 0, calc(100% - 9px) 0%, 100% 10px, 100% 100%, 0 100%);
+  z-index: 999;
+    .el-menu {
+      clip-path: polygon(
+        0 0,
+        calc(100% - 11px) 0%,
+        100% 12px,
+        100% 15px,
+        calc(100% - 4px) 15px,
+        calc(100% - 4px) 18px,
+        100% 18px,
+        100% 21px,
+        calc(100% - 4px) 21px,
+        calc(100% - 4px) 24px,
+        100% 24px,
+        100% 27px,
+        calc(100% - 4px) 27px,
+        calc(100% - 4px) 30px,
+        100% 30px,
+        100% 100%,
+        0 100%
+      );
+    }
+  
+}
+.el-menu--vertical.context-submenu {
+  margin-left: 5px;
+  background-color: @background-color-layout;
+  border: 1px solid @base-theme-color;
+}

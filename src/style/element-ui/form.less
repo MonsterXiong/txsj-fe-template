@@ -1,0 +1,28 @@
+
+.el-form-item.is-required {
+  .el-form-item__label::after {
+    content: '' !important;
+    margin-left: 0 !important;
+  }
+  .el-form-item__label::before {
+    content: '*';
+    color: @input-font-error-color;
+    margin-right: 4px;
+  }
+  .el-form-item__content{
+    .el-input__inner {
+      border-radius: 4px!important;
+    }
+  }
+}
+// 校验报错表单样式
+.el-form-item__error {
+  color: @input-font-error-color;
+}
+.el-form-item.is-error .el-input__inner, .el-form-item.is-error .el-input__inner:focus, .el-form-item.is-error .el-textarea__inner, .el-form-item.is-error .el-textarea__inner:focus, .el-message-box__input input.invalid, .el-message-box__input input.invalid:focus {
+  border-color: @input-error-border-color!important;
+}
+
+.el-form-item.is-error .vue-treeselect:not(.vue-treeselect--disabled):not(.vue-treeselect--focused) .vue-treeselect__control {
+  border-color: @input-error-border-color!important;
+}

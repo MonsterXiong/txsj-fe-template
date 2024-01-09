@@ -1,0 +1,72 @@
+//用于对html本身元素的全局样式的覆盖,不处理颜色,全局通用
+@font-face {
+  font-family: 'ALIMAMASHUHEITI-BOLD';
+  src: url('~@/assets/iconfont/font/ALIMAMASHUHEITI-BOLD.TTF') format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+div {
+  box-sizing: border-box;
+}
+#app {
+  width: 100%;
+  height: 100%;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: text; //支持文本复制
+  font-size: @font-size--normal;
+}
+
+textarea {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+}
+ul {
+  margin: unset;
+  padding: unset;
+}
+li {
+  list-style: none;
+}
+
+/* 消除IE连接虚线边框 */
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: 0;
+}
+
+a:focus {
+  outline: none;
+}
+
+/* 清除ios点击阴影 */
+a,
+input,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  user-select: none;
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 1em;
+    background-color: rgba(50, 50, 50, 0.3);
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 1em;
+    background-color: rgba(50, 50, 50, 0.1);
+  }
+}

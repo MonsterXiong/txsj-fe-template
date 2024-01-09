@@ -1,0 +1,306 @@
+:root{
+  // 主题色
+  --base-theme-color: #409eff;
+  // 字体颜色
+  --font-color: #000;
+  --font-color-active: #409eff;
+  --font-color-light: #fff;
+  --font-color-theme-light:#62caff;
+  --font-color-gray: #82858a;
+  --font-color-dark-gray:#333; //sidebar 搜索栏字体颜色
+  --font-color-toolbar: #606266; //toolbar 操作栏字体颜色
+  --font-color-toolbar-disabled: #a1a1a1; //toolbar 操作栏禁用字体颜色
+  --font-color-red: #810303;
+  // 背景颜色
+  --background-color-base: #fff;
+  --background-color-dark: #000;
+  --background-color-layout: #002150; //layout背景色
+  --background-color-toolbar-disabled: #f1f1f1; //toolbar 禁用背景色
+  --background-color-toolbar-hover: #afcff9;  //toolbar 悬浮背景色
+  --background-color-echart-dark: #edf6ff; //echart深色背景
+  --background-color-light: #f4f9ff;
+  --background-color-light-hover: #dfeeff;
+  --background-color-matrix-active: #0c7fb47a;
+  --background-color-statusbar: #2b2c2fcc;
+  
+  // 边框颜色
+  --border-color-base: #d8dce5;
+  --border-color-light: #ececec;
+  --border-color-dark: #2b2c2f;//status-bar用到
+  --border-color-echart: #6ab4ff; //echart边框颜色
+  // 阴影色
+  --shadow-color-base: #0000004d;
+  --shadow-color-light: #5a7dbc0d;
+  --shadow-color-dark: #43475545;
+
+  // 渐变色设置
+  --linear-gradient-light-color: @background-color-base;//图片资源管理
+  --linear-gradient-dark-color: #edf6ff; //图片资源管理
+  --linear-bg-color-light:#1b6dd9;//#00469a;
+  --linear-bg-color-dark:#002c6f;
+
+  // map用到的颜色 地图组件应用
+  --map-panel-background-color: #3a8cea8f;
+  --map-panel-font-color: #fff;
+  --map-panel-border-color: #fff;
+  --map-panel-title-background-color: #3a8ceaad;
+  --map-panel-title-font-color: #fff;
+  --map-panel-tab-active-background-color: #0054b0cf;
+  --map-panel-tab-border-color: #0054b0cf;
+  --map-panel-box-background-color: #0054b099;
+  --map-panel-box-border-color: #0056b3;
+  --map-panel-current-tree-background-color: #288efc73;
+  --map-statusbar-background-color: #3a8cea41;
+
+  // element表格相关颜色定义
+  --table-header-color: #3575ad;//表格头字体颜色
+  --table-header-bg-color: #dfecfc;//表头背景颜色
+  --table-odd-bg-color: #fff;//表格偶数行颜色
+  --table-even-bg-color: #fafafa;//表格奇数行颜色
+  --table-font-color: #606266;//表格字体颜色
+  --table-hover-bg-color: #F5F7FA;//表格悬停颜色
+  --table-focus-bg-color: #ecf5ff;//表格选中颜色
+  --table-border-color: #ebeef5;//表格边框颜色
+
+  // 输入框相关颜色定义
+  --input-border-color: #dcdfe6;//输入框边框颜色
+  --input-hover-border-color: #C0C4CC;//输入框边框颜色
+  --input-select-border-color: #409EFF;//输入框边框颜色
+  --input-disable-border-color: #E4E7ED;//输入框边框颜色
+  --input-error-border-color: #F56C6C;//输入框边框颜色
+  --input-bg-color: #fff;//输入框输入框背景颜色
+  --input-disable-bg-color: #F5F7FA;//输入框输入框禁用背景颜色
+  --input-disable-bg-color-map: #F5F7FA2f;//map输入框禁用背景颜色
+  --input-font-color: #121212;//输入框文字颜色
+  --input-tipfont-color: #c0c4cc;//输入框文字颜色
+  --input-font-disable-color: #C0C4CC;//输入框文字颜色
+  --input-tipfont-disable-color: #c0c4cc;//输入框文字颜色
+  --input-font-error-color: #F56C6C;//输入框文字颜色
+  --input-icon-color: #cad0d4;
+
+  // button 
+  --button-bg-color-success-disabled: #b3e19d;
+  --plain-button-font-color-success-disabled: #a4da89;
+  --plain-button-border-color-success-disabled: #e1f3d8;
+  --button-bg-color-success: #67C23A;
+  --button-font-color-success: #FFF;
+  --button-active-bg-color-success: #85ce61;
+  --button-active-font-color-success: #FFF;
+  --plain-button-bg-color-success: #f0f9eb;
+  --plain-button-border-color-success: #c2e7b0;
+  --plain-button-active-font-color-success: #FFF;
+
+  --button-bg-color-danger-disabled: #fab6b6;
+  --plain-button-font-color-danger-disabled: #f9a7a7;
+  --plain-button-border-color-danger-disabled: #fde2e2;
+  --button-bg-color-danger: #F56C6C;
+  --button-font-color-danger: #FFF;
+  --button-active-bg-color-danger: #f78989;
+  --button-active-font-color-danger: #FFF;
+  --plain-button-bg-color-danger: #fef0f0;
+  --plain-button-border-color-danger: #fbc4c4;
+  --plain-button-active-font-color-danger: #FFF;
+
+  --button-bg-color-primary-disabled: #a0cfff;
+  --plain-button-font-color-primary-disabled: #8cc5ff;
+  --plain-button-border-color-primary-disabled: #d9ecff;
+  --button-bg-color-primary: #409EFF;
+  --button-font-color-primary: #FFF;
+  --button-active-bg-color-primary: #66b1ff;
+  --button-active-font-color-primary: #FFF;
+  --plain-button-bg-color-primary: #ecf5ff;
+  --plain-button-border-color-primary: #b3d8ff;
+  --plain-button-active-font-color-primary: #FFF;
+
+  
+  --button-border-color-disabled: #EBEEF5;
+  --button-font-color-disabled: #C0C4CC;
+  --button-bg-color-default: #FFF;
+  --button-font-color-default: #606266;
+  --button-border-color-default: #DCDFE6;
+  --button-active-bg-color-default: #ecf5ff;
+  --button-active-border-color-default: #c6e2ff;
+  --button-active-font-color-default: #409EFF;
+
+  --button-bg-color-warning-disabled:#f3d19e;
+  --plain-button-font-color-warning-disabled: #f0c78a;
+  --plain-button-border-color-warning-disabled: #faecd8;
+  --button-bg-color-warning: #E6A23C;
+  --button-font-color-warning: #FFF;
+  --button-active-bg-color-warning: #ebb563;
+  --button-active-font-color-warning: #FFF;
+  --plain-button-bg-color-warning: #fdf6ec;
+  --plain-button-border-color-warning: #f5dab1;
+  --plain-button-active-font-color-warning: #FFF;
+}
+//定义颜色
+/* ========================字体颜色========================*/
+@font-color-active: var(--font-color-active);
+@font-color-gray:var(--font-color-gray);
+@font-color-light:var(--font-color-light);
+@font-color: var(--font-color, #000);
+@font-color-red: var(--font-color-red);
+
+@background-color-base: var(--background-color-base, #fff);
+@background-color-dark: var(--background-color-dark, #fff);
+@background-color-matrix-active:var(--background-color-matrix-active);
+@background-color-statusbar:var(--background-color-statusbar);
+@border-color-base: var(--border-color-base, #d8dce5);
+@border-color-light: var(--border-color-light, #d8dce5);
+@border-color-dark: var(--border-color-dark);
+@base-theme-color: var(--base-theme-color, #409eff);
+@shadow-color-base: var(--shadow-color-base, #0000004d);
+@shadow-color-light: var(--shadow-color-light);
+@shadow-color-dark: var(--shadow-color-base);
+
+// header部分应用到的颜色
+@font-color-theme-light: var(--font-color-theme-light, #62caff);
+
+@background-color-layout: var(--background-color-layout, #002150);
+
+//sidebar应用到的颜色
+@font-color-dark-gray: var(--font-color-dark-gray, #333);
+
+// toolbar应用到的颜色
+@font-color-toolbar: var(--font-color-toolbar, #606266);
+@background-color-toolbar-disabled: var(--background-color-toolbar-disabled, #f1f1f1);
+@font-color-toolbar-disabled: var(--font-color-toolbar-disabled, #a1a1a1);
+@background-color-toolbar-hover: var(--background-color-toolbar-hover, #afcff9);
+
+//echart应用到的颜色
+@border-color-echart: var(--border-color-echart, #6ab4ff);
+@background-color-echart-dark: var(--background-color-echart-dark, #edf6ff);
+
+// tree用到的颜色
+@background-color-light: var(--background-color-light, #f4f9ff);
+@background-color-light-hover: var(--background-color-light-hover, #dfeeff);
+@linear-gradient-light-color: var(--linear-gradient-light-color);
+@linear-gradient-dark-color: var(--linear-gradient-dark-color);
+
+// map用到的颜色
+@map-panel-background-color: var(--map-panel-background-color, #3a8cea8f);
+@map-panel-font-color: var(--map-panel-font-color, #fff);
+@map-panel-border-color: var(--map-panel-border-color, #fff);
+@map-panel-title-background-color: var(--map-panel-title-background-color, #3a8ceaad);
+@map-panel-title-font-color: var(--map-panel-title-font-color, #fff);
+@map-panel-tab-active-background-color: var(--map-panel-tab-active-background-color, #0054b0cf);
+@map-panel-tab-border-color: var(--map-panel-tab-border-color, #0054b0cf);
+@map-panel-box-background-color: var(--map-panel-box-background-color, #0054b099);
+@map-panel-box-border-color: var(--map-panel-box-border-color, #0056b3);
+@map-panel-current-tree-background-color: var(--map-panel-current-tree-background-color, #288efc73);
+@map-statusbar-background-color: var(--map-statusbar-background-color, #3a8cea41);
+
+@linear-bg-color-light:var(--linear-bg-color-light);
+@linear-bg-color-dark:var(--linear-bg-color-dark);
+
+// element表格相关颜色定义
+@table-header-color: var(--table-header-color);//表头字体颜色
+@table-header-bg-color: var(--table-header-bg-color);//表头背景颜色
+@table-odd-bg-color: var(--table-odd-bg-color, #fff);//表格偶数行颜色
+@table-even-bg-color: var(--table-even-bg-color, #f0f5fa);//表格奇数行颜色
+@table-font-color: var(--table-font-color, #0b0b0b);//表格字体颜色
+@table-hover-bg-color: var(--table-hover-bg-color, #e2ecf5);//表格悬停颜色
+@table-focus-bg-color: var(--table-focus-bg-color, #d8e5f2);//表格选中颜色
+@table-border-color: var(--table-border-color, #B9C8D7);//表格边框颜色
+
+// 输入框相关颜色定义
+@input-border-color: var(--input-border-color, #D5D5D5);//输入框边框颜色
+@input-hover-border-color: var(--input-hover-border-color, #1676CE);//输入框边框颜色
+@input-select-border-color: var(--input-select-border-color, #0F599D);//输入框边框颜色
+@input-disable-border-color: var(--input-disable-border-color, #D5D5D5);//输入框边框颜色
+@input-error-border-color: var(--input-error-border-color, #d90000);//输入框边框颜色
+@input-bg-color: var(--input-bg-color, #fff);//输入框输入框背景颜色
+@input-disable-bg-color: var(--input-disable-bg-color, #EBEBEB);//输入框输入框禁用背景颜色
+@input-disable-bg-color-map: var(--input-disable-bg-color-map);//map输入框禁用背景颜色
+@input-font-color: var(--input-font-color, #121212);//输入框文字颜色
+@input-tipfont-color: var(--input-tipfont-color, #d5d5d5);//输入框文字颜色
+@input-font-disable-color: var(--input-font-disable-color, #999999);//输入框文字颜色
+@input-tipfont-disable-color: var(--input-tipfont-disable-color, #999999);//输入框文字颜色
+@input-font-error-color: var(--input-font-error-color, #d90000);//输入框文字颜色
+@input-icon-color:var(--input-icon-color, #999999);
+
+// button相关颜色定义
+@button-bg-color-success:var(--button-bg-color-success);
+@button-font-color-success:var(--button-font-color-success);
+@button-active-bg-color-success:var(--button-active-bg-color-success);
+@button-active-font-color-success:var(--button-active-font-color-success);
+@plain-button-bg-color-success:var(--plain-button-bg-color-success);
+@plain-button-border-color-success:var(--plain-button-border-color-success);
+@plain-button-active-font-color-success:var(--plain-button-active-font-color-success);
+@button-bg-color-success-disabled:var(--button-bg-color-success-disabled);
+@plain-button-font-color-success-disabled:var(--plain-button-font-color-success-disabled);
+@plain-button-border-color-success-disabled:var(--plain-button-border-color-success-disabled);
+
+@button-bg-color-danger:var(--button-bg-color-danger);
+@button-font-color-danger:var(--button-font-color-danger);
+@button-active-bg-color-danger:var(--button-active-bg-color-danger);
+@button-active-font-color-danger:var(--button-active-font-color-danger);
+@plain-button-bg-color-danger:var(--plain-button-bg-color-danger);
+@plain-button-border-color-danger:var(--plain-button-border-color-danger);
+@plain-button-active-font-color-danger:var(--plain-button-active-font-color-danger);
+@button-bg-color-danger-disabled:var(--button-bg-color-danger-disabled);
+@plain-button-font-color-danger-disabled:var(--plain-button-font-color-danger-disabled);
+@plain-button-border-color-danger-disabled:var(--plain-button-border-color-danger-disabled);
+
+
+@button-bg-color-primary:var(--button-bg-color-primary);
+@button-font-color-primary:var(--button-font-color-primary);
+@button-active-bg-color-primary:var(--button-active-bg-color-primary);
+@button-active-font-color-primary:var(--button-active-font-color-primary);
+@plain-button-bg-color-primary:var(--plain-button-bg-color-primary);
+@plain-button-border-color-primary:var(--plain-button-border-color-primary);
+@plain-button-active-font-color-primary:var(--plain-button-active-font-color-primary);
+@button-bg-color-primary-disabled:var(--button-bg-color-primary-disabled);
+@plain-button-font-color-primary-disabled:var(--plain-button-font-color-primary-disabled);
+@plain-button-border-color-primary-disabled:var(--plain-button-border-color-primary-disabled);
+
+
+@button-bg-color-default:var(--button-bg-color-default);
+@button-font-color-default:var(--button-font-color-default);
+@button-border-color-default:var(--button-border-color-default);
+@button-active-bg-color-default:var(--button-active-bg-color-default);
+@button-active-border-color-default:var(--button-active-border-color-default);
+@button-active-font-color-default:var(--button-active-font-color-default);
+@button-border-color-disabled:var(--button-border-color-disabled);
+@button-font-color-disabled:var(--button-font-color-disabled);
+
+@button-bg-color-warning:var(--button-bg-color-warning);
+@button-font-color-warning:var(--button-font-color-warning);
+@button-active-bg-color-warning:var(--button-active-bg-color-warning);
+@button-active-font-color-warning:var(--button-active-font-color-warning);
+@plain-button-bg-color-warning:var(--plain-button-bg-color-warning);
+@plain-button-border-color-warning:var(--plain-button-border-color-warning);
+@plain-button-active-font-color-warning:var(--plain-button-active-font-color-warning);
+@button-bg-color-warning-disabled:var(--button-bg-color-warning-disabled);
+@plain-button-font-color-warning-disabled:var(--plain-button-font-color-warning-disabled);
+@plain-button-border-color-warning-disabled:var(--plain-button-border-color-warning-disabled);
+
+//定义位置
+@dialog-footer-align: var(--dialog-footer-align, right);
+
+@import './baseFn.less';
+
+//定义通用的非颜色变量
+@font-family: 'ALIMAMASHUHEITI-BOLD';
+@font-size--small: 12px;
+@font-size--normal: 14px;
+@font-size--middle: 16px;
+@font-size--large: 18px;
+@title-font-size-small: 20px;
+@title-font-size-normal: 22px;
+@title-font-size-middle: 24px;
+@title-font-size-large: 26px;
+@title-font-size-huge: 30px;
+@base-space: 4px;
+@base-tool-bar-height: 100px;
+
+
+
+
+// 布局用到的变量
+@panel-border-color: var(--panel-border-color, #2d75c2);
+@panel-gap: 10px;
+
+:export {
+  panel-gap: @panel-gap;
+}

@@ -1,0 +1,24 @@
+diff --git a/node_modules/stompjs/lib/stomp.js b/node_modules/stompjs/lib/stomp.js
+index 6329e1a..eef2881 100644
+--- a/node_modules/stompjs/lib/stomp.js
++++ b/node_modules/stompjs/lib/stomp.js
+@@ -381,15 +381,16 @@
+       return {
+         id: headers.id,
+         unsubscribe: function() {
+-          return client.unsubscribe(headers.id);
++          return client.unsubscribe(headers.id, destination);
+         }
+       };
+     };
+ 
+-    Client.prototype.unsubscribe = function(id) {
++    Client.prototype.unsubscribe = function(id,destination) {
+       delete this.subscriptions[id];
+       return this._transmit("UNSUBSCRIBE", {
+-        id: id
++        id: id,
++        destination
+       });
+     };
+ 

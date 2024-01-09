@@ -1,0 +1,31 @@
+#darkBlue{
+  --font-color:#fff;
+  --background-color-base: #002150;
+  --table-hover-bg-color: #002f72;
+
+  // 深色主题修改 element ui 样式
+  .el-radio {
+    color: @font-color;
+  }
+  .main-container {
+    &-content {
+      background: @background-color-base;
+    }
+  }
+  .el-tree {
+    background: transparent;
+    color: @font-color;
+  }
+  .el-tree-node:focus>.el-tree-node__content {
+    background-color: @table-hover-bg-color;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 1em;
+    background-color: rgba(207, 207, 207, 0.3);
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 1em;
+    background-color: rgba(245, 245, 245, 0.1);
+  }
+}

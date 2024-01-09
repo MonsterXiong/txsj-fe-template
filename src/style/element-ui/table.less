@@ -1,0 +1,76 @@
+// element ui 表格类样式
+.el-table {
+  .el-table__header .el-table__cell {
+    padding: 4px 0;
+    color: @table-header-color;
+    background-color: @table-header-bg-color;
+  }}
+  tbody tr > td{
+    color: @table-font-color;
+    background-color: @table-odd-bg-color;
+  }
+  // tbody tr:nth-child(odd) > td{
+  //   background-color: @table-odd-bg-color;
+  // }
+  // tbody tr:nth-child(even) > td{
+  //   background-color: @table-even-bg-color;
+  // }
+  // tbody tr:hover > td{
+  //   background-color: @table-hover-bg-color!important;
+  // }
+  .el-table__body tr.current-row > td.el-table__cell {
+    background-color: @table-focus-bg-color;
+  }
+  .el-table__body .el-table__row.hover-row td {
+    background-color: @table-hover-bg-color!important;
+  }
+// }
+
+// 斑马纹表格修改
+.el-table--striped {
+  .el-table__body tr.el-table__row--striped td.el-table__cell {
+    // background-color: #f1f8fe;
+    background-color: @table-even-bg-color;
+  }
+  .el-table__body tr:hover > td{
+    background: @table-hover-bg-color!important;
+  }
+  // .el-table__body tr.current-row > td.el-table__cell {
+  //   background-color: @table-focus-bg-color;
+  // }
+  .el-table__body tr.el-table__row--striped.current-row td.el-table__cell {
+    background-color: @table-focus-bg-color;
+}
+}
+
+// 表格边框颜色设置
+.el-table {
+  border-color: @table-border-color;
+  th{
+    border-color: @table-border-color;
+  }
+  td{
+    border-color: @table-border-color;
+  }
+}
+
+.el-table__fixed-right::before,
+.el-table__fixed::before {
+  background-color: transparent;
+}
+
+.el-table__fixed,
+.el-table__fixed-left,
+.el-table__fixed-right {
+  bottom: 4px !important;
+}
+
+
+// 表格分页
+//覆盖element原生样式
+.el-pagination {
+  // padding: 0 20px;
+  padding-top: 10px;
+  text-align: right;
+  // overflow: auto;
+}
