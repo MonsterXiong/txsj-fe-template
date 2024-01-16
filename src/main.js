@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 import install from './install'
 import _ from 'lodash'
-import { znTool } from 'zn-ui'
+// import { znTool } from 'zn-ui'
 import './directives/index.js'
 import '@/baseComponents'
 // icomoon 的图标（树形绘图模型和指标绘图模型专用）
@@ -39,4 +39,4 @@ window.onload = (event) => {
   window.document.title = configData.systemName
 }
 window._ = _
-window.znTool = znTool
+// window.znTool = znTool

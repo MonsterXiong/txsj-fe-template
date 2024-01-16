@@ -48,12 +48,35 @@ export default {
       const menuData = menuList.map((item) => {
         return {
           ...item,
-          title:item.name,
+          title: item.name,
           children: item.children?.length ? item.children : [],
         }
       })
-      this.navMenuList = znTool.treeTool.listToTree(menuData, { pidKey: 'parent' })
-      console.log('navMenuList', this.navMenuList)
+      // this.navMenuList = znTool.treeTool.listToTree(menuData, { pidKey: 'parent' })
+      this.navMenuList = this.listToTree(menuData, { pidKey: 'parent' })
+    },
+    getMenuList(menuData) {
+      return this.listToTree(menuData, { pidKey: 'parent' })
+      // return znTool.treeTool.listToTree(menuData, { pidKey: 'parent' })
+    },
+    listToTree(list, { idKey = 'id', pidKey = 'parentId', childKey = 'children' } = {}) {
+      if (!Array.isArray(list)) {
+        return []
+      }
+      const idMap = {}
+      const tree = []
+      list.forEach((item) => {
+        idMap[item[idKey]] = item
+      })
+      list.forEach((item) => {
+        const parent = idMap[item[pidKey]]
+        if (parent) {
+          ;(parent[childKey] || (parent[childKey] = [])).push(item)
+        } else {
+          tree.push(item)
+        }
+      })
+      return tree
     },
     onMenuClick(menu) {
       //重复点击
