@@ -9,7 +9,7 @@
         :title="item.title"
       >
         <div class="icon-wrap">
-          <span :class="['iconfont', item.icon]" />
+          <span :class="['iconfont', item.icon || 'icon--_dakaixiangmu-copy']" />
         </div>
         <div class="side-menu-name">{{ item.title }}</div>
       </div>
